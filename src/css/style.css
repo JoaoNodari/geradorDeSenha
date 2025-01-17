@@ -2,9 +2,11 @@
 
 body {
     background-color: rgba(0, 0, 0, 0.39);
-    width: 100%;
-    height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('../img/fundo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -17,9 +19,10 @@ body {
 }
 
 .container h1 {
-    font-size: 44px;
+    font-size: 54px;
     margin-bottom: 20px;
     font-family: "Silkscreen", serif;
+    color: #6cf357;
 }
 
 .container .password {
@@ -32,6 +35,11 @@ body {
 .container .password span {
     font-size: 20px;
     color: #FFF;
+}
+
+.container .password span #valor{
+    color: yellow;
+    font-weight: bolder;
 }
 
 .container .password .slider {
@@ -57,4 +65,55 @@ body {
 
 .container .password .button-cta:hover {
     transform: scale(1.05);
+}
+
+.container .container-senha-gerada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.container .container-senha-gerada .title {
+    font-weight: bolder;
+    font-size: 34px;
+    color: #FFF;
+}
+
+.container .container-senha-gerada .password {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 5px;
+    justify-content: center;
+    color: #FFF;
+    border: 1px solid #313131;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.container .container-senha-gerada .password:hover {
+    transform: scale(1.03);
+}
+
+.tooltip {
+    padding: 10px;
+    background-color: rgb(15, 15, 15, .5);
+    border-radius: 5px;
+    color: #FFF;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.container-senha-gerada.hidden {
+    display: none;
+}
+
+.container .container-senha-gerada:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
 }

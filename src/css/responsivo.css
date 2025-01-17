@@ -1,0 +1,15 @@
+@media(max-width: 480px) {
+
+    .container h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .container .password {
+        max-width: 70%;
+    }
+
+    .container .container-senha-gerada {
+        width: 100%;
+    }
+}
