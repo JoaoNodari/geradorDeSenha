@@ -5,7 +5,7 @@
 
 Este projeto foi desenvolvido para aprimorar meus conhecimentos em HTML, CSS e JavaScript. O objetivo é criar um gerador de senhas, onde o usuário pode escolher a quantidade de caracteres que a senha pode ter com geração de combinações aleatórias.
 
-<strong>Link:<strong> 
+<strong>Link:<strong> https://joaonodari.github.io/geradorDeSenha/
 
 ### 🔨 Ferramentas Utilizadas
 
